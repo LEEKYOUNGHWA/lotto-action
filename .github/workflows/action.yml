@@ -3,7 +3,7 @@ name: Lotto Buy Bot (로또 구매봇)
 #on: [push]
 on:
   schedule:
-    - cron: '51 07 * * 6' # UST 기준의 크론. UST 23:55 는 KST 08:55
+    - cron: '59 07 * * 6' # UST 기준의 크론. UST 23:55 는 KST 08:55
 
 jobs:
   build:
@@ -40,5 +40,6 @@ jobs:
         unzip ./chromedriver_linux64.zip           
       
     - name: Run!      
-      run: |        
+      run: |
+        cd lotto-action
         python ./buy_lotto.py
