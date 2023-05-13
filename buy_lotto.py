@@ -6,7 +6,7 @@ USER_ID = 'nhd5913' # 수정1
 USER_PW = 'dudwo135!' #수정2
 
 # 구매 개수를 설정
-COUNT = 1
+COUNT = 3
 
 def run(playwright: Playwright) -> None:
 
